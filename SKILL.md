@@ -1,13 +1,14 @@
 ---
 name: standards-spec-review
-description: Review a code change from a fixed point against repository standards and its originating specification, reporting each axis separately.
+description: Read-only review of a fixed code change against repository standards and its originating specification, reporting each axis separately. Use when the user asks to review a local diff, branch, or commit range for standards compliance and specification fidelity. This is the generic local core; for hosted pull requests prefer a host-specific PR review skill that wraps it, when installed. Not for posting comments or submitting reviews.
 ---
 
 # Standards and specification review
 
 Review one fixed change against two independent sources of truth. This skill is
 read-only: it does not alter the checkout, post comments, submit a review, or
-merge anything.
+merge anything. For hosted pull requests, a host-specific review skill may wrap
+this core and own any publishing.
 
 ## Fix the review boundary
 
