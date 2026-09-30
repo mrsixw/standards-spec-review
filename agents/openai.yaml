@@ -2,3 +2,5 @@ interface:
   display_name: "Standards and Spec Review"
   short_description: "Review standards and specification fidelity"
   default_prompt: "Use $standards-spec-review to review this change against standards and its specification."
+policy:
+  allow_implicit_invocation: false
