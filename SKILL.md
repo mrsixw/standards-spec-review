@@ -29,6 +29,12 @@ invent requirements.
   safety, maintainability, and testability concerns. Label generic heuristics as
   judgement rather than policy. A documented repository rule takes precedence
   over a general design heuristic.
+  Always check for magic numbers, even when the repository does not document a
+  rule: Steve treats them as a standing standard, not a heuristic. Report a
+  bare literal whose meaning a reader must guess (exit or status codes,
+  timeouts, retry counts, thresholds, magic strings), and treat a literal that
+  must agree across files (a script's exit code and the CI check that reads
+  it) as material, because the copies drift apart silently.
 - **Specification:** trace each requirement to implementation and tests. Check
   omissions, incorrect behaviour, unsupported scope, and unhandled boundaries.
 
